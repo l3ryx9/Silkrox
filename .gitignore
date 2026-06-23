@@ -11,6 +11,9 @@ out-tsc
 # dependencies
 node_modules
 
+# Lockfile (regenerated on install)
+pnpm-lock.yaml
+
 # IDEs and editors
 /.idea
 .project
@@ -47,3 +50,13 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Expo / React Native
+android/
+ios/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+web-build/
