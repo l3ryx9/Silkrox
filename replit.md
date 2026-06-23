@@ -11,6 +11,17 @@ _Replace the heading above with the project's name, and this line with one sente
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
 - Required env: `DATABASE_URL` — Postgres connection string
 
+### Mobile (Expo + EAS)
+
+- `pnpm --filter @workspace/mobile run start` — start Expo dev server
+- `pnpm --filter @workspace/mobile run android` — run on Android
+- `pnpm --filter @workspace/mobile run ios` — run on iOS simulator
+- `pnpm --filter @workspace/mobile run build:android` — EAS build for Android
+- `pnpm --filter @workspace/mobile run build:ios` — EAS build for iOS
+- `pnpm --filter @workspace/mobile run update` — push OTA update via EAS Update
+- EAS Project ID: `a61d6309-8c28-4bb3-a50d-bdf513086a7e`
+- Must be logged in: `eas login` before any EAS command
+
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
@@ -19,6 +30,7 @@ _Replace the heading above with the project's name, and this line with one sente
 - Validation: Zod (`zod/v4`), `drizzle-zod`
 - API codegen: Orval (from OpenAPI spec)
 - Build: esbuild (CJS bundle)
+- Mobile: Expo 53 (React Native 0.79), expo-router v4, EAS Build & Update
 
 ## Where things live
 
